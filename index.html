@@ -67,14 +67,14 @@
         ctx.fill();
 
         ctx.fillStyle = "#FF6600";
-        ctx.fillText("Beta: " + Math.round(event.gamma), 10, 140);
+        ctx.fillText("Beta: " + Math.round(event.beta), 10, 140);
         ctx.beginPath();
-        ctx.fillRect(180, 150, event.gamma, 90);
+        ctx.fillRect(180, 150, event.beta, 90);
 
         ctx.fillStyle = "#FF0000";
-        ctx.fillText("Gamma: " + Math.round(event.beta), 10, 270);
+        ctx.fillText("Gamma: " + Math.round(event.gamma), 10, 270);
         ctx.beginPath();
-        ctx.fillRect(90, 340, 180, event.beta);
+        ctx.fillRect(90, 340, 180, event.gamma);
       }
 
       if (window.DeviceOrientationEvent) {
